@@ -21,13 +21,13 @@
         赋能全球企业，提供下一代 AIGC 能力和智能云基础设施。<br/>与海福星云科技共建未来。
       </h2>
       <div class="flex flex-col sm:flex-row gap-4 mt-4 w-full justify-center">
-        <button class="flex items-center justify-center rounded-xl h-12 px-8 bg-primary hover:bg-primary-dark text-white text-base font-bold tracking-wide shadow-glow hover:shadow-glow-hover transition-all duration-300 w-full sm:w-auto">
+        <router-link to="/solutions" class="flex items-center justify-center rounded-xl h-12 px-8 bg-primary hover:bg-primary-dark text-white text-base font-bold tracking-wide shadow-glow hover:shadow-glow-hover transition-all duration-300 w-full sm:w-auto">
           探索解决方案
-        </button>
-        <button class="flex items-center justify-center gap-2 rounded-xl h-12 px-8 bg-surface-highlight hover:bg-surface-dark border border-gray-700 text-white text-base font-bold transition-all w-full sm:w-auto group">
-          <span>查看行业</span>
+        </router-link>
+        <router-link to="/products" class="flex items-center justify-center gap-2 rounded-xl h-12 px-8 bg-surface-highlight hover:bg-surface-dark border border-gray-700 text-white text-base font-bold transition-all w-full sm:w-auto group">
+          <span>查看产品</span>
           <span class="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
-        </button>
+        </router-link>
       </div>
     </div>
     <div class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-background-dark to-transparent z-10"></div>

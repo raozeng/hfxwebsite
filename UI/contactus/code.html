@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>联系我们 - 海福星云 (Haifuxing Cloud)</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "Noto Sans", "sans-serif"],
+                        "sans": ["Space Grotesk", "Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .glow-text {
+            text-shadow: 0 0 20px rgba(19, 127, 236, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display antialiased selection:bg-primary selection:text-white">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Header -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#283039] bg-[#111418] px-10 py-3 sticky top-0 z-50">
+<div class="flex items-center gap-4 text-white">
+<div class="size-8 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">cloud_circle</span>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">海福星云 (Haifuxing Cloud)</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<nav class="flex items-center gap-9 hidden md:flex">
+<a class="text-white/70 hover:text-white text-sm font-medium leading-normal transition-colors" href="#">首页</a>
+<a class="text-white/70 hover:text-white text-sm font-medium leading-normal transition-colors" href="#">解决方案</a>
+<a class="text-white/70 hover:text-white text-sm font-medium leading-normal transition-colors" href="#">产品中心</a>
+<a class="text-white/70 hover:text-white text-sm font-medium leading-normal transition-colors" href="#">关于我们</a>
+<a class="text-white text-sm font-medium leading-normal border-b-2 border-primary pb-0.5" href="#">联系我们</a>
+</nav>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-primary hover:bg-primary/90 transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">登录</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-1 relative">
+<!-- Background World Map Texture -->
+<div class="absolute inset-0 z-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#137fec 1px, transparent 1px); background-size: 32px 32px;"></div>
+<div class="relative z-10 layout-container flex h-full grow flex-col max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+<!-- Hero Title Section -->
+<div class="flex flex-col gap-4 text-center py-10 lg:py-16">
+<h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-[-0.033em] glow-text">
+                        与海福星云开启智启之旅
+                    </h1>
+<h2 class="text-slate-400 text-base md:text-lg font-normal leading-normal max-w-2xl mx-auto">
+                        Start your intelligent journey with Haifuxing Cloud. Connecting you to the future of AI technology from Hainan to the world.
+                    </h2>
+</div>
+<!-- Two Column Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 mb-12">
+<!-- Left Side: Contact Info & Grid -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<!-- Business Inquiry Card -->
+<div class="glass-panel p-6 rounded-xl flex flex-col gap-4">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-primary text-2xl">business_center</span>
+<h3 class="text-xl font-bold text-white">商务合作</h3>
+</div>
+<div class="flex flex-col gap-3">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-slate-400 text-sm mt-1">call</span>
+<div>
+<p class="text-xs text-slate-400 uppercase tracking-wider">Phone</p>
+<p class="text-white">+86 898-8888-6666</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-slate-400 text-sm mt-1">mail</span>
+<div>
+<p class="text-xs text-slate-400 uppercase tracking-wider">Email</p>
+<p class="text-white">business@haifuxing.com</p>
+</div>
+</div>
+</div>
+<button class="mt-2 w-full flex items-center justify-center gap-2 rounded-lg h-10 px-4 bg-primary/20 hover:bg-primary/30 border border-primary/50 text-primary hover:text-white transition-all text-sm font-bold">
+<span class="material-symbols-outlined text-lg">smart_toy</span>
+<span>Chat with AI Assistant</span>
+</button>
+</div>
+<!-- Location Card with Mini Map -->
+<div class="glass-panel p-6 rounded-xl flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-2xl">location_on</span>
+<h3 class="text-xl font-bold text-white">办公地址</h3>
+</div>
+<p class="text-slate-300 text-sm">Hainan Free Trade Port, Haikou City, Full Ecological Software Park, Building A, Floor 12.</p>
+<!-- Stylized Map Container -->
+<div class="relative w-full h-40 rounded-lg overflow-hidden border border-white/10 group cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Dark map of Hainan city streets" data-location="Haikou" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCuBvyGl_zNrqUn4Jzama-8tpFxfhqWWACYKp7bAAPKKQSGTUBCxJQlRF2P4Okg99HGw3wP4LU0Zcj2m-8I8rWzVR89YOLZK8ZaMg451enU4RmmC2aTIW5UElddwanq1yc55GLYS4woB_bdYDaQzB_h7I-v8vh-PWzYAlS0uinNyfXgjkZfXFwVznGQN5pB0Z_7zpSKGCVj7rthnEiTtOT382l-i_HXkxAj3iTyCdQ4fr6n5Amt9EFr9SYq_XzkGR8iKkHrdv6k2eDt'); filter: grayscale(100%) contrast(120%) brightness(60%);">
+</div>
+<div class="absolute inset-0 bg-primary/20 mix-blend-overlay"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="relative flex h-4 w-4">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-4 w-4 bg-primary"></span>
+</span>
+</div>
+<div class="absolute bottom-2 right-2 bg-black/70 px-2 py-1 rounded text-[10px] text-white backdrop-blur-sm">Open Maps</div>
+</div>
+</div>
+<!-- Bottom Grid: Talent & Social -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<!-- Talent -->
+<div class="glass-panel p-5 rounded-xl flex flex-col justify-between gap-4">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary">group_add</span>
+<h4 class="font-bold text-white">人才招聘</h4>
+</div>
+<p class="text-xs text-slate-400">Join our team of innovators.</p>
+</div>
+<div>
+<p class="text-sm text-white font-medium mb-2">hr@haifuxing.com</p>
+<a class="text-primary text-xs flex items-center gap-1 hover:underline" href="#">
+                                        View Openings <span class="material-symbols-outlined text-[10px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Social -->
+<div class="glass-panel p-5 rounded-xl flex flex-col justify-between gap-4">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary">share</span>
+<h4 class="font-bold text-white">社交媒体</h4>
+</div>
+<p class="text-xs text-slate-400">Follow our latest updates.</p>
+</div>
+<div class="flex gap-3">
+<div class="size-8 rounded bg-white/10 flex items-center justify-center hover:bg-primary/50 transition-colors cursor-pointer" title="WeChat">
+<span class="material-symbols-outlined text-white text-sm">chat</span>
+</div>
+<div class="size-8 rounded bg-white/10 flex items-center justify-center hover:bg-primary/50 transition-colors cursor-pointer" title="Enterprise WeChat">
+<span class="material-symbols-outlined text-white text-sm">work</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Side: Inquiry Form -->
+<div class="lg:col-span-7">
+<div class="glass-panel h-full rounded-xl p-6 md:p-10 flex flex-col justify-center">
+<h3 class="text-2xl font-bold text-white mb-2">发送消息</h3>
+<p class="text-slate-400 mb-8">We'd love to hear from you. Please fill out this form.</p>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-sm font-medium text-slate-300" for="name">Name</label>
+<input class="w-full bg-black/20 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" id="name" placeholder="Your Name" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-medium text-slate-300" for="company">Company</label>
+<input class="w-full bg-black/20 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" id="company" placeholder="Company Name" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-sm font-medium text-slate-300" for="phone">Phone</label>
+<input class="w-full bg-black/20 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" id="phone" placeholder="+86 1XX XXXX XXXX" type="tel"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-medium text-slate-300" for="type">Inquiry Type</label>
+<div class="relative">
+<select class="w-full bg-black/20 border border-white/10 rounded-lg px-4 py-3 text-white appearance-none focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all cursor-pointer" id="type">
+<option>Business Cooperation</option>
+<option>Product Support</option>
+<option>Media Inquiry</option>
+<option>Others</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-medium text-slate-300" for="message">Message</label>
+<textarea class="w-full bg-black/20 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none" id="message" placeholder="Tell us about your needs..." rows="5"></textarea>
+</div>
+<div class="pt-4">
+<button class="w-full md:w-auto min-w-[160px] bg-gradient-to-r from-primary to-[#2563eb] hover:from-primary/90 hover:to-[#2563eb]/90 text-white font-bold py-3 px-8 rounded-lg shadow-lg shadow-primary/20 transition-all transform active:scale-95 flex items-center justify-center gap-2" type="button">
+<span>Send Message</span>
+<span class="material-symbols-outlined text-sm">send</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<!-- Footer / Support Badge -->
+<div class="flex justify-center mb-8">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium">
+<span class="material-symbols-outlined text-lg">support_agent</span>
+                        7x24 Intelligent Technical Support
+                    </div>
+</div>
+</div>
+</main>
+<!-- Simple Footer -->
+<footer class="border-t border-[#283039] bg-[#111418] py-8 px-10 text-center text-slate-500 text-sm">
+<p>© 2023 海福星云 (Haifuxing Cloud). All rights reserved.</p>
+</footer>
+</div>
+</body></html>

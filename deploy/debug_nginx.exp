@@ -1,0 +1,21 @@
+#!/usr/bin/expect -f
+
+set timeout 20
+set ip "120.25.165.230"
+set user "root"
+set password "nm,./=-098"
+
+# Check available sites and content of default
+spawn ssh -o StrictHostKeyChecking=no $user@$ip "ls -l /etc/nginx/sites-enabled/; echo '---DEFAULT CONFIG---'; cat /etc/nginx/sites-enabled/default; echo '---WEB ROOT---'; ls -l /usr/share/nginx/html/"
+expect {
+    "yes/no" {
+        send "yes\r"
+        exp_continue
+    }
+    "password:" {
+        sleep 1
+        send -- "$password\r"
+        exp_continue
+    }
+    eof
+}

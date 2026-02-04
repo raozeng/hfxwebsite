@@ -1,0 +1,324 @@
+<template>
+  <div class="bg-background-light dark:bg-background-dark min-h-screen flex flex-col overflow-x-hidden text-[#111418] dark:text-white pt-20">
+    <!-- Page Title Section with Nebula Background -->
+    <div class="relative w-full bg-background-light dark:bg-background-dark dark:bg-nebula-gradient pt-16 pb-12 px-4 sm:px-10">
+      <div class="max-w-[960px] mx-auto text-center">
+        <h1 class="text-[#111418] dark:text-white text-4xl sm:text-5xl font-black leading-tight tracking-[-0.033em] mb-4">行业解决方案</h1>
+        <p class="text-[#637588] dark:text-[#9dabb9] text-lg font-normal leading-normal max-w-2xl mx-auto">
+          赋能各行各业，为您定制专属AI智能化升级方案。从文旅到医疗，我们提供全方位的技术支持与实施服务。
+        </p>
+      </div>
+    </div>
+    <!-- Main Content Area -->
+    <div class="flex flex-col lg:flex-row max-w-[1440px] mx-auto w-full px-4 sm:px-10 py-8 gap-8">
+      <!-- Sidebar Filter (Desktop) / Horizontal Scroll (Mobile) -->
+      <div class="w-full lg:w-64 shrink-0 space-y-8">
+        <div class="sticky top-24">
+          <div class="mb-6">
+            <h3 class="text-[#111418] dark:text-white text-lg font-bold mb-4 flex items-center gap-2">
+              <span class="material-symbols-outlined text-primary">filter_alt</span> 筛选
+            </h3>
+            <div class="mb-6">
+              <p class="text-[#637588] dark:text-[#9dabb9] text-xs font-bold uppercase tracking-wider mb-3">行业分类</p>
+              <div class="flex flex-row lg:flex-col gap-2 overflow-x-auto lg:overflow-visible scrollbar-hide pb-2 lg:pb-0">
+                <button class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary text-white w-full text-left whitespace-nowrap">
+                  <span class="material-symbols-outlined text-[20px]">grid_view</span>
+                  <span class="text-sm font-medium">全部行业</span>
+                </button>
+                <button class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#e5e7eb] dark:hover:bg-[#1c2127] text-[#111418] dark:text-[#9dabb9] transition-colors w-full text-left whitespace-nowrap">
+                  <span class="material-symbols-outlined text-[20px]">landscape</span>
+                  <span class="text-sm font-medium">智慧文旅</span>
+                </button>
+                <button class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#e5e7eb] dark:hover:bg-[#1c2127] text-[#111418] dark:text-[#9dabb9] transition-colors w-full text-left whitespace-nowrap">
+                  <span class="material-symbols-outlined text-[20px]">medical_services</span>
+                  <span class="text-sm font-medium">医疗健康</span>
+                </button>
+                <button class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#e5e7eb] dark:hover:bg-[#1c2127] text-[#111418] dark:text-[#9dabb9] transition-colors w-full text-left whitespace-nowrap">
+                  <span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+                  <span class="text-sm font-medium">智慧电商</span>
+                </button>
+                <button class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#e5e7eb] dark:hover:bg-[#1c2127] text-[#111418] dark:text-[#9dabb9] transition-colors w-full text-left whitespace-nowrap">
+                  <span class="material-symbols-outlined text-[20px]">school</span>
+                  <span class="text-sm font-medium">智慧教育</span>
+                </button>
+                <button class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#e5e7eb] dark:hover:bg-[#1c2127] text-[#111418] dark:text-[#9dabb9] transition-colors w-full text-left whitespace-nowrap">
+                  <span class="material-symbols-outlined text-[20px]">account_balance</span>
+                  <span class="text-sm font-medium">金融科技</span>
+                </button>
+              </div>
+            </div>
+            <div>
+              <p class="text-[#637588] dark:text-[#9dabb9] text-xs font-bold uppercase tracking-wider mb-3">技术领域</p>
+              <div class="flex flex-row lg:flex-col gap-2 overflow-x-auto lg:overflow-visible scrollbar-hide pb-2 lg:pb-0">
+                <button class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#e5e7eb] dark:hover:bg-[#1c2127] text-[#111418] dark:text-[#9dabb9] transition-colors w-full text-left whitespace-nowrap">
+                  <span class="material-symbols-outlined text-[20px]">translate</span>
+                  <span class="text-sm font-medium">NLP 自然语言</span>
+                </button>
+                <button class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#e5e7eb] dark:hover:bg-[#1c2127] text-[#111418] dark:text-[#9dabb9] transition-colors w-full text-left whitespace-nowrap">
+                  <span class="material-symbols-outlined text-[20px]">visibility</span>
+                  <span class="text-sm font-medium">计算机视觉</span>
+                </button>
+                <button class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#e5e7eb] dark:hover:bg-[#1c2127] text-[#111418] dark:text-[#9dabb9] transition-colors w-full text-left whitespace-nowrap">
+                  <span class="material-symbols-outlined text-[20px]">settings_suggest</span>
+                  <span class="text-sm font-medium">流程自动化</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Solutions Grid -->
+      <div class="flex-1">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Card 1: Tourism -->
+          <div class="group flex flex-col bg-white dark:bg-[#1c2127] rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-[#e5e7eb] dark:border-[#283039]">
+            <div class="h-48 w-full bg-cover bg-center relative" data-alt="Futuristic tourism concept with map overlay" style="background-image: url('/images/localized/solutions_bg_1.jpg');">
+              <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all"></div>
+              <div class="absolute top-4 left-4 bg-primary/90 text-white text-xs font-bold px-2 py-1 rounded">文旅</div>
+            </div>
+            <div class="p-6 flex flex-col grow">
+              <div class="flex items-start justify-between mb-3">
+                <h3 class="text-xl font-bold text-[#111418] dark:text-white group-hover:text-primary transition-colors">AI+智慧文旅</h3>
+                <span class="material-symbols-outlined text-[#637588] dark:text-[#9dabb9]">landscape</span>
+              </div>
+              <p class="text-[#637588] dark:text-[#9dabb9] text-sm mb-4 line-clamp-2">
+                解决传统旅游信息不对称痛点，打造沉浸式游览体验。通过AI导游、智能推荐路线提升游客满意度。
+              </p>
+              <div class="mt-auto">
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-2 py-1 bg-[#f0f4f8] dark:bg-[#283039] text-[#111418] dark:text-white text-xs rounded">多语言翻译</span>
+                  <span class="px-2 py-1 bg-[#f0f4f8] dark:bg-[#283039] text-[#111418] dark:text-white text-xs rounded">AR导航</span>
+                  <span class="px-2 py-1 bg-[#f0f4f8] dark:bg-[#283039] text-[#111418] dark:text-white text-xs rounded">人流预测</span>
+                </div>
+                <button class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                  查看详情 <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2: Medical -->
+          <div class="group flex flex-col bg-white dark:bg-[#1c2127] rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-[#e5e7eb] dark:border-[#283039]">
+            <div class="h-48 w-full bg-cover bg-center relative" data-alt="Medical interface showing DNA helix and data" style="background-image: url('/images/localized/solutions_bg_2.jpg');">
+              <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all"></div>
+              <div class="absolute top-4 left-4 bg-primary/90 text-white text-xs font-bold px-2 py-1 rounded">医疗</div>
+            </div>
+            <div class="p-6 flex flex-col grow">
+              <div class="flex items-start justify-between mb-3">
+                <h3 class="text-xl font-bold text-[#111418] dark:text-white group-hover:text-primary transition-colors">AI+精准医疗辅助</h3>
+                <span class="material-symbols-outlined text-[#637588] dark:text-[#9dabb9]">medical_services</span>
+              </div>
+              <p class="text-[#637588] dark:text-[#9dabb9] text-sm mb-4 line-clamp-2">
+                辅助医生进行影像诊断，提高诊断效率与准确率，降低误诊风险。实现病历结构化管理。
+              </p>
+              <div class="mt-auto">
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-2 py-1 bg-[#f0f4f8] dark:bg-[#283039] text-[#111418] dark:text-white text-xs rounded">影像分析</span>
+                  <span class="px-2 py-1 bg-[#f0f4f8] dark:bg-[#283039] text-[#111418] dark:text-white text-xs rounded">辅助决策</span>
+                  <span class="px-2 py-1 bg-[#f0f4f8] dark:bg-[#283039] text-[#111418] dark:text-white text-xs rounded">基因测序</span>
+                </div>
+                <button class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                  查看详情 <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3: E-commerce -->
+          <div class="group flex flex-col bg-white dark:bg-[#1c2127] rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-[#e5e7eb] dark:border-[#283039]">
+            <div class="h-48 w-full bg-cover bg-center relative" data-alt="Digital shopping carts and logistics data visualization" style="background-image: url('/images/localized/solutions_bg_3.jpg');">
+              <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all"></div>
+              <div class="absolute top-4 left-4 bg-primary/90 text-white text-xs font-bold px-2 py-1 rounded">电商</div>
+            </div>
+            <div class="p-6 flex flex-col grow">
+              <div class="flex items-start justify-between mb-3">
+                <h3 class="text-xl font-bold text-[#111418] dark:text-white group-hover:text-primary transition-colors">AI+智慧零售</h3>
+                <span class="material-symbols-outlined text-[#637588] dark:text-[#9dabb9]">shopping_cart</span>
+              </div>
+              <p class="text-[#637588] dark:text-[#9dabb9] text-sm mb-4 line-clamp-2">
+                通过用户行为分析实现千人千面推荐，智能客服24小时在线，大幅提升转化率。
+              </p>
+              <div class="mt-auto">
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-2 py-1 bg-[#f0f4f8] dark:bg-[#283039] text-[#111418] dark:text-white text-xs rounded">个性推荐</span>
+                  <span class="px-2 py-1 bg-[#f0f4f8] dark:bg-[#283039] text-[#111418] dark:text-white text-xs rounded">智能客服</span>
+                  <span class="px-2 py-1 bg-[#f0f4f8] dark:bg-[#283039] text-[#111418] dark:text-white text-xs rounded">库存预测</span>
+                </div>
+                <button class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                  查看详情 <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4: Education -->
+          <div class="group flex flex-col bg-white dark:bg-[#1c2127] rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-[#e5e7eb] dark:border-[#283039]">
+            <div class="h-48 w-full bg-cover bg-center relative" data-alt="Students learning with digital tablet overlay" style="background-image: url('/images/localized/solutions_bg_4.jpg');">
+              <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all"></div>
+              <div class="absolute top-4 left-4 bg-primary/90 text-white text-xs font-bold px-2 py-1 rounded">教育</div>
+            </div>
+            <div class="p-6 flex flex-col grow">
+              <div class="flex items-start justify-between mb-3">
+                <h3 class="text-xl font-bold text-[#111418] dark:text-white group-hover:text-primary transition-colors">AI+个性化教育</h3>
+                <span class="material-symbols-outlined text-[#637588] dark:text-[#9dabb9]">school</span>
+              </div>
+              <p class="text-[#637588] dark:text-[#9dabb9] text-sm mb-4 line-clamp-2">
+                自适应学习系统，根据学生掌握情况动态调整教学内容，实现因材施教。
+              </p>
+              <div class="mt-auto">
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-2 py-1 bg-[#f0f4f8] dark:bg-[#283039] text-[#111418] dark:text-white text-xs rounded">自适应学习</span>
+                  <span class="px-2 py-1 bg-[#f0f4f8] dark:bg-[#283039] text-[#111418] dark:text-white text-xs rounded">智能批改</span>
+                  <span class="px-2 py-1 bg-[#f0f4f8] dark:bg-[#283039] text-[#111418] dark:text-white text-xs rounded">口语评测</span>
+                </div>
+                <button class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                  查看详情 <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Featured Solution Section -->
+    <div class="bg-[#f0f4f8] dark:bg-[#0d1218] py-16 w-full mt-8">
+      <div class="max-w-[1440px] mx-auto px-4 sm:px-10">
+        <div class="flex flex-col lg:flex-row gap-12 items-center">
+          <div class="flex-1 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-bold">
+              <span class="material-symbols-outlined text-sm">star</span> 精选案例
+            </div>
+            <h2 class="text-3xl font-black text-[#111418] dark:text-white leading-tight">
+              AI+智慧电商：<br/>重塑全球贸易新体验
+            </h2>
+            <p class="text-[#637588] dark:text-[#9dabb9] text-lg">
+              我们协助大型跨境电商企业建立了智能化运营平台。通过AI驱动的个性化推荐、24小时智能客服以及供应链库存优化，实现了业务的全面提速与成本优化。
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+              <div class="bg-white dark:bg-[#1c2127] p-4 rounded-lg border-l-4 border-red-500 shadow-sm">
+                <p class="text-xs font-bold text-[#637588] dark:text-[#9dabb9] uppercase mb-1">改造前 (Before)</p>
+                <ul class="space-y-2">
+                  <li class="flex items-center gap-2 text-sm text-[#111418] dark:text-white">
+                    <span class="material-symbols-outlined text-red-500 text-base">close</span> 人工客服响应慢，投诉率高
+                  </li>
+                  <li class="flex items-center gap-2 text-sm text-[#111418] dark:text-white">
+                    <span class="material-symbols-outlined text-red-500 text-base">close</span> 转化率低，推荐不精准
+                  </li>
+                  <li class="flex items-center gap-2 text-sm text-[#111418] dark:text-white">
+                    <span class="material-symbols-outlined text-red-500 text-base">close</span> 库存积压严重，周转缓慢
+                  </li>
+                </ul>
+              </div>
+              <div class="bg-white dark:bg-[#1c2127] p-4 rounded-lg border-l-4 border-green-500 shadow-sm">
+                <p class="text-xs font-bold text-[#637588] dark:text-[#9dabb9] uppercase mb-1">改造后 (After)</p>
+                <ul class="space-y-2">
+                  <li class="flex items-center gap-2 text-sm text-[#111418] dark:text-white">
+                    <span class="material-symbols-outlined text-green-500 text-base">check</span> AI客服秒级响应，0等待
+                  </li>
+                  <li class="flex items-center gap-2 text-sm text-[#111418] dark:text-white">
+                    <span class="material-symbols-outlined text-green-500 text-base">check</span> 订单转化率提升35%
+                  </li>
+                  <li class="flex items-center gap-2 text-sm text-[#111418] dark:text-white">
+                    <span class="material-symbols-outlined text-green-500 text-base">check</span> 库存周转率提高50%
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button class="mt-6 flex items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-[#111418] dark:bg-white text-white dark:text-[#111418] hover:opacity-90 transition-opacity text-sm font-bold">
+              阅读完整案例
+            </button>
+          </div>
+          <div class="flex-1 w-full relative">
+            <div class="absolute -inset-4 bg-primary/20 blur-xl rounded-full"></div>
+            <div class="relative rounded-xl overflow-hidden shadow-2xl">
+              <img class="w-full h-auto object-cover aspect-video" data-alt="High-tech automated warehouse with robots" src="/images/localized/solutions_img.jpg"/>
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                <div class="flex gap-4 text-white">
+                  <div class="text-center">
+                    <p class="text-2xl font-bold">35%</p>
+                    <p class="text-xs opacity-80">转化率提升</p>
+                  </div>
+                  <div class="w-px bg-white/30 h-10"></div>
+                  <div class="text-center">
+                    <p class="text-2xl font-bold">50%</p>
+                    <p class="text-xs opacity-80">运营成本降低</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Process Flow -->
+    <div class="py-16 w-full max-w-[1440px] mx-auto px-4 sm:px-10">
+      <h2 class="text-2xl font-bold text-[#111418] dark:text-white mb-10 text-center">服务流程</h2>
+      <div class="relative">
+        <!-- Connecting Line -->
+        <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-[#e5e7eb] dark:bg-[#283039] -translate-y-1/2 z-0"></div>
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-6 relative z-10">
+          <!-- Step 1 -->
+          <div class="flex flex-col items-center text-center group">
+            <div class="w-16 h-16 rounded-full bg-white dark:bg-[#1c2127] border-2 border-primary flex items-center justify-center shadow-lg mb-4 group-hover:scale-110 transition-transform duration-300">
+              <span class="material-symbols-outlined text-primary text-3xl">chat</span>
+            </div>
+            <h4 class="text-lg font-bold text-[#111418] dark:text-white mb-1">需求沟通</h4>
+            <p class="text-xs text-[#637588] dark:text-[#9dabb9]">明确业务痛点与目标</p>
+          </div>
+          <!-- Step 2 -->
+          <div class="flex flex-col items-center text-center group">
+            <div class="w-16 h-16 rounded-full bg-white dark:bg-[#1c2127] border-2 border-[#e5e7eb] dark:border-[#283039] group-hover:border-primary flex items-center justify-center shadow-lg mb-4 group-hover:scale-110 transition-transform duration-300">
+              <span class="material-symbols-outlined text-[#637588] dark:text-[#9dabb9] group-hover:text-primary text-3xl transition-colors">design_services</span>
+            </div>
+            <h4 class="text-lg font-bold text-[#111418] dark:text-white mb-1">方案设计</h4>
+            <p class="text-xs text-[#637588] dark:text-[#9dabb9]">定制化架构与算法选型</p>
+          </div>
+          <!-- Step 3 -->
+          <div class="flex flex-col items-center text-center group">
+            <div class="w-16 h-16 rounded-full bg-white dark:bg-[#1c2127] border-2 border-[#e5e7eb] dark:border-[#283039] group-hover:border-primary flex items-center justify-center shadow-lg mb-4 group-hover:scale-110 transition-transform duration-300">
+              <span class="material-symbols-outlined text-[#637588] dark:text-[#9dabb9] group-hover:text-primary text-3xl transition-colors">model_training</span>
+            </div>
+            <h4 class="text-lg font-bold text-[#111418] dark:text-white mb-1">模型训练</h4>
+            <p class="text-xs text-[#637588] dark:text-[#9dabb9]">数据处理与迭代优化</p>
+          </div>
+          <!-- Step 4 -->
+          <div class="flex flex-col items-center text-center group">
+            <div class="w-16 h-16 rounded-full bg-white dark:bg-[#1c2127] border-2 border-[#e5e7eb] dark:border-[#283039] group-hover:border-primary flex items-center justify-center shadow-lg mb-4 group-hover:scale-110 transition-transform duration-300">
+              <span class="material-symbols-outlined text-[#637588] dark:text-[#9dabb9] group-hover:text-primary text-3xl transition-colors">rocket_launch</span>
+            </div>
+            <h4 class="text-lg font-bold text-[#111418] dark:text-white mb-1">部署上线</h4>
+            <p class="text-xs text-[#637588] dark:text-[#9dabb9]">系统集成与私有化部署</p>
+          </div>
+          <!-- Step 5 -->
+          <div class="flex flex-col items-center text-center group">
+            <div class="w-16 h-16 rounded-full bg-white dark:bg-[#1c2127] border-2 border-[#e5e7eb] dark:border-[#283039] group-hover:border-primary flex items-center justify-center shadow-lg mb-4 group-hover:scale-110 transition-transform duration-300">
+              <span class="material-symbols-outlined text-[#637588] dark:text-[#9dabb9] group-hover:text-primary text-3xl transition-colors">monitoring</span>
+            </div>
+            <h4 class="text-lg font-bold text-[#111418] dark:text-white mb-1">运维优化</h4>
+            <p class="text-xs text-[#637588] dark:text-[#9dabb9]">持续监控与版本升级</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CTA Section -->
+    <div class="bg-white dark:bg-[#1c2127] border-t border-[#e5e7eb] dark:border-[#283039] py-16 px-4">
+      <div class="max-w-[640px] mx-auto text-center">
+        <h2 class="text-3xl font-black text-[#111418] dark:text-white mb-4">定制您的AI方案</h2>
+        <p class="text-[#637588] dark:text-[#9dabb9] mb-8">
+          无论您的企业规模如何，我们都能提供适合的智能化解决方案。留下您的联系方式，我们的专家将在24小时内与您联系。
+        </p>
+        <form class="space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <input class="w-full h-12 rounded-lg bg-[#f0f4f8] dark:bg-[#111418] border-none text-[#111418] dark:text-white placeholder-[#9dabb9] focus:ring-2 focus:ring-primary px-4" placeholder="您的姓名" type="text"/>
+            <input class="w-full h-12 rounded-lg bg-[#f0f4f8] dark:bg-[#111418] border-none text-[#111418] dark:text-white placeholder-[#9dabb9] focus:ring-2 focus:ring-primary px-4" placeholder="工作邮箱" type="email"/>
+          </div>
+          <input class="w-full h-12 rounded-lg bg-[#f0f4f8] dark:bg-[#111418] border-none text-[#111418] dark:text-white placeholder-[#9dabb9] focus:ring-2 focus:ring-primary px-4" placeholder="公司名称" type="text"/>
+          <textarea class="w-full rounded-lg bg-[#f0f4f8] dark:bg-[#111418] border-none text-[#111418] dark:text-white placeholder-[#9dabb9] focus:ring-2 focus:ring-primary px-4 py-3" placeholder="请简述您的需求或痛点" rows="4"></textarea>
+          <button class="w-full h-12 bg-primary hover:bg-primary/90 text-white font-bold rounded-lg transition-colors shadow-lg shadow-primary/30" type="button">
+            提交咨询
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup>
+</script>

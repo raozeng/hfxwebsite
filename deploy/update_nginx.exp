@@ -1,0 +1,34 @@
+#!/usr/bin/expect -f
+
+set timeout 20
+set ip "120.25.165.230"
+set user "root"
+set password "nm,./=-098"
+set local_file "www.haifuxing.com-80"
+set remote_file "/etc/nginx/sites-enabled/www.haifuxing.com-80"
+
+# Upload config
+spawn scp -o StrictHostKeyChecking=no $local_file $user@$ip:$remote_file
+expect {
+    "yes/no" {
+        send "yes\r"
+        exp_continue
+    }
+    "password:" {
+        sleep 1
+        send -- "$password\r"
+        exp_continue
+    }
+    eof
+}
+
+# Reload Nginx
+spawn ssh -o StrictHostKeyChecking=no $user@$ip "nginx -s reload"
+expect {
+    "password:" {
+        sleep 1
+        send -- "$password\r"
+        exp_continue
+    }
+    eof
+}

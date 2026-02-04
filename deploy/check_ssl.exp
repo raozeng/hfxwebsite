@@ -1,0 +1,21 @@
+#!/usr/bin/expect -f
+
+set timeout 20
+set ip "120.25.165.230"
+set user "root"
+set password "nm,./=-098"
+
+# List keys and check expiry of the current PEM
+spawn ssh -o StrictHostKeyChecking=no $user@$ip "ls -l /etc/nginx/key/; openssl x509 -in /etc/nginx/key/www.haifuxing.com.pem -noout -dates"
+expect {
+    "yes/no" {
+        send "yes\r"
+        exp_continue
+    }
+    "password:" {
+        sleep 1
+        send -- "$password\r"
+        exp_continue
+    }
+    eof
+}
